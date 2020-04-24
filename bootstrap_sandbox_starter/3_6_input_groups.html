@@ -88,86 +88,90 @@
         <!--####################START HERE#####################-->
 
         <!-- BASIC INPUT GROUPS -->
-        <div>
-            <div>
-                <span>@</span>
+        <div class="input-group m-2">
+            <div class="input-group-prepend">
+                <!--this will make the @ and the input field inline before the input field.-->
+                <span class="input-group-text">@</span>
+                <!--this will add a box around @.-->
             </div>
-            <input type="text" placeholder="Username">
+            <input class="form-control" type="text" placeholder="Username">
         </div>
 
         <br>
 
-        <div>
-            <input type="text" placeholder="Username">
-            <div>
-                <span>@something.com</span>
+        <div class="input-group">
+            <input class="form-control" type="text" placeholder="Username">
+            <div class="input-group-append">
+                <!-- this will make the @ append to the input field.-->
+                <span class="input-group-text">@something.com</span>
             </div>
         </div>
 
         <br>
 
         <label for="basic-url">Custom URL</label>
-        <div>
-            <div>
-                <span>https://something.com/member/</span>
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text">https://something.com/member/</span>
             </div>
-            <input type="text">
+            <input type="text" class="form-control">
         </div>
 
         <br>
 
-        <div>
-            <div>
-                <span>$</span>
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text">$</span>
             </div>
-            <input type="text">
-            <div>
-                <span>.00</span>
+            <input class="form-control" type="text">
+            <div class="input-group-append">
+                <span class="input-group-text">.00</span>
             </div>
         </div>
 
         <br>
 
         <!-- CHECKBOX -->
-        <div>
-            <div>
-                <div>
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text">
+                    <!-- the input-group-text can be written even in the input field when the div tag is removed-->
                     <input type="checkbox">
                 </div>
             </div>
-            <input type="text">
+            <input type="text" class="form-control">
         </div>
 
         <br>
 
         <!-- RADIO -->
-        <div>
-            <div>
-                <div>
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <div class="input-group-text">
                     <input type="radio">
                 </div>
             </div>
-            <input type="text">
+            <input type="text" class="form-control">
         </div>
 
         <br>
 
         <!-- MULTIPLE INPUTS -->
-        <div>
-            <div>
-                <span id="">Name & Email</span>
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <span id="" class="input-group-text">Name & Email</span>
             </div>
-            <input type="text" placeholder="Full Name">
-            <input type="email" placeholder="Email">
+            <input class="form-control" type="text" placeholder="Full Name">
+            <input class="form-control" type="email" placeholder="Email">
         </div>
 
         <br>
 
         <!-- BUTTON ADDONS -->
-        <div>
-            <input type="text" placeholder="Find By Name...">
-            <div>
-                <button type="button">Search</button>
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Find By Name...">
+            <div class="input-group-append">
+                <button type="button" class="btn">Search</button>
             </div>
         </div>
 
